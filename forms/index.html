@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Forms</title>
+</head>
+<body>
+	<!-- Forms in HTML5 -->
+	<!-- the action refering to the php document would send the data to the php file -->
+	<form action="action_page.php" method="POST">
+		<!-- for and id makes it so when you click on the label it selects the box, also makes it easy
+			for peope with screen readers. name is like a variable. placeholder puts ghost texts-->
+		
+		<!-- text type input, for attribute specificies which input the label is attributed too.
+			 required attribute means you have to fill it in to submit. -->
+		<div>
+			<label for="fname">First name:</label>
+			<input type="text" id="fname" name="fname" placeholder="John" required>
+		</div>
+
+		<br>
+
+		<div>
+			<label for="lname">Last name:</label>
+			<input type="text" id="lname" name="lname" placeholder="Smith" required>
+		</div>
+
+		<br>
+
+		<!-- password type input.
+			 minlength is the minimum length-->
+		<div>
+			<label for="pass">Password:</label>
+			<input type="password" id="pass" name="pass" minlength="4" required>
+		</div>
+
+		<br>
+
+		<!-- email type input -->
+		<div>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" placeholder="john_smith@gmail.com">
+		</div>
+
+		<br>
+
+		<!-- phone number type input -->
+		<div>
+			<label for="phone">Phone #:</label>
+			<input type="tel" id="phone" name="phone" placeholder="(123)-456-7890">
+		</div>
+
+		<br>
+
+		<!-- date type input -->
+		<div>
+			<label for="bdate">Birthdate:</label>
+			<input type="date" id="bdate" name="bdate" placeholder="11-03-1977">
+		</div>
+
+		<br>
+
+		<!-- number type input 
+			 min is the minimum quantity and max is the maximum quantity. value is the default -->
+		<div>
+			<label for="quantity">Quantity:</label>
+			<input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+		</div>
+
+		<br>
+
+		<!-- radio type input.
+			 value tag specificies the value of an input -->
+		<div>
+			<label for="title">Title:</label>
+
+			<label for="Mr.">Mr.</label>
+			<input type="radio" id="Mr." name="title" value="Mr.">
+			
+			<label for="Mrs.">Mrs.</label>
+			<input type="radio" id="Mrs." name="title" value="Mrs.">
+
+			<label for="PhD.">PhD.</label>
+			<input type="radio" id="PhD." name="title" value="PhD.">
+		</div>
+
+		<br>
+
+		<!-- select tags and options -->
+		<div>
+			<label for="payment">Payment:</label>
+			<select id="payment" name="payment">
+				<option value="Visa">Visa</option>
+				<option value="Mastercard">Mastercard</option>
+				<option value="Paypal">Paypal</option>
+			</select>
+		</div>
+
+		<br>
+
+		<!-- checkbox type input -->
+		<div>
+			<label for="subscribe">Subscribe:</label>
+			<input type="checkbox" id="subscribe" name="subscribe">
+		</div>
+
+		<br>
+
+		<!-- resets form -->
+		<div>
+			<input type="reset">
+		</div>
+
+		<br>
+
+		<!-- submits form -->
+		<div>
+			<input type="submit">
+		</div>
+
+	</form>
+
+</body>
+</html>
