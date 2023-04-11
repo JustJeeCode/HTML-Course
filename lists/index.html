@@ -1,3 +1,5 @@
+<!-- Lists in HTML -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,14 +8,19 @@
 	<title>Lists</title>
 </head>
 <body>
+	<!-- 
+		Unordered list, uses dot points.
+	 -->
 
 	<h4>Unordered List</h4>
+		<!-- Ul tags = unordered list. -->
 		<ul>
+			<!-- Li tags = list elements -->
 			<li>Pizza dough</li>
 			<li>Tomato sauce</li>
 			<li>Mozerella</li>
 			<li>Toppings
-			<!-- nested list in a list, creates a sub list. -->
+			<!-- Nested list in a list, creates a sub list. -->
 				<ul>
 					<li>Salami</li>
 					<li>Mushrooms</li>
@@ -22,16 +29,19 @@
 			</li>
 		</ul>
 
+
+	<!-- Ordered list, by default orders with numbers (we can change this with the type attribute.) -->
 	<h4>Ordered List</h4>
-	<!-- type changes how the list is ordered, example: A means alphabetically. -->
+	<!-- Type changes how the list is ordered, example: A means alphabetically. -->
 		<ol type="A">
 			<li>Eat breakfast</li>
 			<li>Take a shower</li>
 			<li>Leave for work</li>
 		</ol>
 
+	<!-- Description list, has a term and a descripton. -->
 	<h4>Description List</h4>
-	<!-- dt is the term and dd is the description -->
+	<!-- Dt is the term and dd is the description. -->
 		<dl>
 			<dt>HTML</dt>
 			<dd>This adds structure to a webpage.</dd>
